@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4f3bbb0403cc646ae3b9e7bc264360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cherriesText: {fileID: 0}
+  cherriesText: {fileID: 1068717313}
   collectionSoundEffect: {fileID: 549590923}
 --- !u!95 &549590927
 Animator:
@@ -2548,7 +2548,7 @@ GameObject:
   - component: {fileID: 1068717314}
   - component: {fileID: 1068717313}
   m_Layer: 5
-  m_Name: Cherries Text
+  m_Name: cherriesText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
