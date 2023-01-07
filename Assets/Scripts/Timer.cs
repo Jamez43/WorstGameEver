@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+
     [SerializeField] private Text timerText;
     private float startTime;
     private bool finished = false;
+
+    private static string endTime;
 
     // Start is called before the first frame update
     private void Start()
@@ -31,11 +35,15 @@ public class Timer : MonoBehaviour
         }
 
         timerText.text = minutes + ":" + seconds;
+        endTime = minutes + ":"+ seconds;
     }
+    
 
     public void Finish()
     {
         finished = true;
         timerText.color = Color.red;
+        PlayerInfo.recordTimes[SceneManager.GetActiveScene().buildIndex -1] = endTime;
     }
+
 }

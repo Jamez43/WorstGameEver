@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 739305348}
   - component: {fileID: 739305347}
   - component: {fileID: 739305346}
-  - component: {fileID: 739305345}
+  - component: {fileID: 739305349}
   m_Layer: 5
   m_Name: PlayAgain
   m_TagString: Untagged
@@ -429,18 +429,6 @@ RectTransform:
   m_AnchoredPosition: {x: 148, y: -125}
   m_SizeDelta: {x: 181.8804, y: 35.1483}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &739305345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739305343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4374d90bed81854408d4d68ab648cfae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &739305346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,9 +473,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 739305345}
-        m_TargetAssemblyTypeName: startGame, Assembly-CSharp
-        m_MethodName: StartGame
+      - m_Target: {fileID: 739305349}
+        m_TargetAssemblyTypeName: EndGame, Assembly-CSharp
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -535,6 +523,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739305343}
   m_CullTransparentMesh: 1
+--- !u!114 &739305349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739305343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eae732a846a89a4c90d2ca3dbfa229a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &742893191
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,8 +786,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 882843536}
-        m_TargetAssemblyTypeName: EndMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_TargetAssemblyTypeName: EndGame, Assembly-CSharp
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

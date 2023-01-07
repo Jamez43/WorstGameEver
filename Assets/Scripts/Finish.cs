@@ -12,12 +12,10 @@ public class Finish : MonoBehaviour
     private void Start()
     {
         finishSound = GetComponent<AudioSource>();
-        Debug.Log("start");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("collision");
         if (collision.gameObject.name == "Player" && !levelCompleted)
         {
             GameObject.Find("Timer").SendMessage("Finish");
@@ -29,7 +27,9 @@ public class Finish : MonoBehaviour
 
     private void CompleteLevel()
     {
-        Debug.Log("complete");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerInfo.levelComplete[SceneManager.GetActiveScene().buildIndex -1] = true;
+        //print out levels completed
+        SceneManager.LoadScene(0);
     }
+   
 }

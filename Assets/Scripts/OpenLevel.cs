@@ -18,6 +18,5 @@ public class OpenLevel : MonoBehaviour
     public void LevelSelect()
     {
         SceneManager.LoadScene("Level" + level);
-
     }
 }
