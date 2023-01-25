@@ -27,9 +27,13 @@ public class Finish : MonoBehaviour
 
     private void CompleteLevel()
     {
-        PlayerInfo.levelComplete[SceneManager.GetActiveScene().buildIndex -1] = true;
+        PlayerInfo.levelsCompleted[SceneManager.GetActiveScene().buildIndex - 1] = true;
         //print out levels completed
+        for (int i = 0; i < PlayerInfo.levelsCompleted.Length; i++)
+        {
+            Debug.Log("Level " + (i + 1) + ": " + PlayerInfo.levelsCompleted[i]);
+        }
         SceneManager.LoadScene(0);
     }
-   
+
 }
