@@ -15,7 +15,7 @@ public class OpenLevel : MonoBehaviour
     private void Start()
     {
         if(PlayerInfo.recordTimes[level-1] != null)
-        timeText.text = PlayerInfo.recordTimes[level - 1];
+        timeText.text = PlayerInfo.recordTimes[level - 1] + "\nJordans: " + PlayerInfo.jordanPercent[level-1] + "%";
     }
 
     // Update is called once per frame

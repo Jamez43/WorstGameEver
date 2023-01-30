@@ -210,7 +210,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -787,6 +787,14 @@ PrefabInstance:
       propertyPath: m_Text
       value: Complete Level 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5053199441125420690, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053199441125420690, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
 --- !u!1001 &1659651065
@@ -916,7 +924,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5053199441125420690, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
       propertyPath: m_Text
-      value: Complete LEvel 2
+      value: Complete Level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053199441125420690, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053199441125420690, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
@@ -1048,6 +1064,14 @@ PrefabInstance:
     - target: {fileID: 5053199441125420690, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
       propertyPath: m_Text
       value: Complete Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053199441125420690, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053199441125420690, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
@@ -1186,6 +1210,14 @@ PrefabInstance:
       value: 'Play Me
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053199441125420690, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053199441125420690, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41798e2bc6786e4408edbbc56b931e82, type: 3}

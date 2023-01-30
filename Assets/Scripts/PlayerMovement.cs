@@ -18,12 +18,10 @@ public class PlayerMovement : MonoBehaviour
     private enum MovementState { idle, running, jumping, falling };
 
     [SerializeField] private AudioSource jumpSoundEffect;
-    [SerializeField] private AudioSource bgMusic;
 
     // Start is called before the first frame update
     private void Start()
     {
-        bgMusic.Play();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();

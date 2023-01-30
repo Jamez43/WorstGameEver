@@ -9,6 +9,7 @@ public class PlayerInfo : MonoBehaviour
 
     public static string[] recordTimes = new string[4];
     public static bool[] levelsCompleted = new bool[4];
+    public static int[] jordanPercent = new int[4];
     
 
     private void Start()

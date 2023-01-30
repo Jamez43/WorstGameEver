@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class itemCollector : MonoBehaviour
@@ -27,7 +28,12 @@ public class itemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             cherries++;
             int percent = (int)((cherries / totalCherries) * 100);
-            cherriesText.text = "Cherries: " + cherries + "\nPercent: " + percent + "%";
+            cherriesText.text = "Jordans: " + cherries + "\nPercent: " + percent + "%";
+            
+            if(PlayerInfo.jordanPercent[SceneManager.GetActiveScene().buildIndex - 1] < percent)
+            {
+                PlayerInfo.jordanPercent[SceneManager.GetActiveScene().buildIndex - 1] = percent;
+            }
         }
     }
 }
