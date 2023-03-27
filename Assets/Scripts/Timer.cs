@@ -51,9 +51,15 @@ public class Timer : MonoBehaviour
 
         if (PlayerInfo.recordTimes[SceneManager.GetActiveScene().buildIndex - 1] == null || isFaster(PlayerInfo.recordTimes[SceneManager.GetActiveScene().buildIndex - 1], endTime))
         {
+            PlayerInfo.jordanPercent[SceneManager.GetActiveScene().buildIndex - 1] = PlayerInfo.tempJs[SceneManager.GetActiveScene().buildIndex - 1];
             PlayerInfo.recordTimes[SceneManager.GetActiveScene().buildIndex - 1] = endTime;
+            Debug.Log("Temp J's = " + PlayerInfo.tempJs[0]);
+            Debug.Log("real J's = " + PlayerInfo.jordanPercent[0]);
+
         }
-       for (int i = 0; i < PlayerInfo.recordTimes.Length; i++)
+
+
+        for (int i = 0; i < PlayerInfo.recordTimes.Length; i++)
         {
             Debug.Log("Level " + (i + 1) + ": " + PlayerInfo.recordTimes[i]);
         }

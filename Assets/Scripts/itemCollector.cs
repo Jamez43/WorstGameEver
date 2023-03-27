@@ -17,11 +17,10 @@ public class itemCollector : MonoBehaviour
     private void Start()
     {
         totalCherries = GameObject.FindGameObjectsWithTag("Cherry").Length;
+        PlayerInfo.tempJs[SceneManager.GetActiveScene().buildIndex - 1] = 0;
 }
     private void OnTriggerEnter2D(Collider2D collision)
     {
- 
-
         if (collision.gameObject.CompareTag("Cherry"))
         {
             collectionSoundEffect.Play();
@@ -29,11 +28,7 @@ public class itemCollector : MonoBehaviour
             cherries++;
             int percent = (int)((cherries / totalCherries) * 100);
             cherriesText.text = "Jordans: " + cherries + "\nPercent: " + percent + "%";
-            
-            if(PlayerInfo.jordanPercent[SceneManager.GetActiveScene().buildIndex - 1] < percent)
-            {
-                PlayerInfo.jordanPercent[SceneManager.GetActiveScene().buildIndex - 1] = percent;
-            }
+            PlayerInfo.tempJs[SceneManager.GetActiveScene().buildIndex - 1] = percent;
         }
     }
 }

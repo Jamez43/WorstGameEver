@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -31,6 +32,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
         dirX = Input.GetAxisRaw("Horizontal");//sets input manager to x axis
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);//changes velocity, (arrow key/a and d set it to 1)(controller can be .5)
 
